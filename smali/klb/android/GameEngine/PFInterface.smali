@@ -2499,35 +2499,12 @@
     .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 1195
-    :try_start_1
-    new-instance v2, Ljava/lang/String;
+    const-string p0, "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz2Z/TyjpY/Pwx7RiPJ+dT+1fzBmNr9ncRH99FWUx7wlrH+EuRcAh3j3BTTkL9fi1QVYNHi+Y58lAI7hkupQFACiPxcrF4YzSRz5zYiJP6XGQ6vrdZ2Mfhga/flCLgA3W1gk6WGlU/xh3Li90lnB3L+gsIkpUQpAU7voGUfk4l7DjhGVMWqGR6MumoJdPhtxtRKpJxRAZmeY+mERn6Z3wdPIKWTaDFNFa85/To6bmPHgyWc65q7HYo6LreOG4OCUsGk8QfKf9mx6o12zN+wqFvfOuzgToVFiA+LrzQn27PvHKertCse4vkZ8GD+acWh1rDWdPqRdNrwbpWGZirE1wtQIDAQAB"
 
-    const-string v3, "UTF-8"
-
-    invoke-direct {v2, p0, v3}, Ljava/lang/String;-><init>([BLjava/lang/String;)V
-    :try_end_1
-    .catch Ljava/io/UnsupportedEncodingException; {:try_start_1 .. :try_end_1} :catch_0
-
-    const-string p0, ""
-
-    const-string v3, "-----BEGIN PUBLIC KEY-----\n"
-
-    .line 1202
-    invoke-virtual {v2, v3, p0}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
-
-    move-result-object v2
-
-    const-string v3, "-----END PUBLIC KEY-----"
-
-    .line 1203
-    invoke-virtual {v2, v3, p0}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
-
-    move-result-object p0
-
-    const/4 v2, 0x0
+    const/4 v3, 0x0
 
     .line 1205
-    invoke-static {p0, v2}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
+    invoke-static {p0, v3}, Landroid/util/Base64;->decode(Ljava/lang/String;I)[B
 
     move-result-object p0
 
