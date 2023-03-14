@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/view_login_mode_divider" android:background="@drawable/gl_line_upright" android:visibility="gone" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:layout_alignParentStart="true" />
+    <TextView android:textSize="14.0sp" android:textColor="@android:color/black" android:id="@id/tv_login_name" android:layout_width="wrap_content" android:layout_height="fill_parent" android:drawableTop="@drawable/gl_daoyu" android:drawablePadding="4.0dip" android:layout_centerInParent="true" />
+</RelativeLayout>

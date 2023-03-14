@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/gl_bg_pop" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:id="@id/webview_quick_validate" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ImageView android:id="@id/iv_close" android:layout_width="32.0dip" android:layout_height="32.0dip" android:src="@drawable/gl_close24" android:scaleType="center" android:layout_alignParentRight="true" android:contentDescription="@string/gl_dialog_close" />
+</RelativeLayout>

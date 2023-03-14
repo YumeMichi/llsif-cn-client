@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/gl_bg_pop" android:layout_width="292.0dip" android:layout_height="@dimen/gl_new_dialog_portrait_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_close" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/gl_close32" android:scaleType="center" android:contentDescription="@string/gl_dialog_close" android:layout_alignParentEnd="true" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:text="@string/gl_dele_acct" android:layout_centerHorizontal="true" style="?gl_title_main" />
+    <TextView android:id="@id/tv_delete_tiptitle" android:layout_width="242.0dip" android:layout_height="wrap_content" android:layout_marginTop="64.0dip" android:text="@string/gl_dele_acct_hesitate" android:layout_centerHorizontal="true" android:lineSpacingExtra="2.0dip" style="?gl_title_main" />
+    <ScrollView android:id="@id/tv_real_name_describe" android:layout_width="242.0dip" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="10.0dip" android:layout_above="@id/ll_action" android:layout_below="@id/tv_delete_tiptitle" android:layout_centerHorizontal="true">
+        <TextView android:id="@id/tv_delete_tip1" android:layout_width="242.0dip" android:layout_height="242.0dip" android:text="@string/gl_dele_acct_tips3" android:lineSpacingExtra="2.0dip" style="?gl_body_txt1" />
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ll_action" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="11.0dip" android:layout_alignParentBottom="true">
+        <TextView android:gravity="center" android:id="@id/tv_cancel_dele" android:background="@drawable/gl_selector_bt_assistant" android:layout_width="0.0dip" android:layout_height="38.0dip" android:text="@string/gl_dele_acct_cancel" android:layout_weight="1.0" style="?gl_bt_assistant" />
+        <TextView android:gravity="center" android:id="@id/tv_confirm_dele" android:background="@drawable/gl_selector_bt_main" android:layout_width="0.0dip" android:layout_height="38.0dip" android:text="@string/gl_dele_acct_confirm" android:layout_weight="1.0" android:layout_marginStart="20.0dip" style="?gl_bt_main" />
+    </LinearLayout>
+</RelativeLayout>

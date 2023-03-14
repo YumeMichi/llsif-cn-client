@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/gl_bg_main" android:layout_width="292.0dip" android:layout_height="304.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_back" android:layout_width="42.0dip" android:layout_height="42.0dip" android:src="@drawable/gl_back_main" android:scaleType="center" android:contentDescription="@string/gl_page_back_des" />
+    <ImageView android:id="@id/iv_close" android:layout_width="42.0dip" android:layout_height="42.0dip" android:src="@drawable/gl_close32" android:scaleType="center" android:layout_alignParentRight="true" android:contentDescription="@string/gl_dialog_close" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:text="@string/gl_active_tip" android:layout_centerHorizontal="true" style="?gl_title_main" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/view_input_activate_code" android:background="@drawable/gl_input" android:layout_width="242.0dip" android:layout_height="38.0dip" android:layout_marginTop="69.0dip" android:layout_centerHorizontal="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:src="@drawable/gl_password" />
+        <EditText android:id="@id/et_input_activate" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:hint="@string/gl_active_tip" android:maxLines="1" android:maxLength="32" android:layout_weight="1.0" android:inputType="text" android:textCursorDrawable="@drawable/gl_cursor_color" style="?gl_input_txt" />
+    </LinearLayout>
+    <TextView android:gravity="center" android:id="@id/tv_activate_enter_game" android:background="@drawable/gl_selector_bt_main" android:layout_width="242.0dip" android:layout_height="38.0dip" android:layout_marginBottom="20.0dip" android:text="@string/gl_enter_game" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="?gl_bt_main" />
+</RelativeLayout>

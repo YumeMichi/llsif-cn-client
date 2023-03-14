@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true" android:drawable="@drawable/gl_dy_main_on" />
+    <item android:state_enabled="false" android:drawable="@drawable/gl_bt_forbidden" />
+    <item android:drawable="@drawable/gl_dy_main" />
+</selector>

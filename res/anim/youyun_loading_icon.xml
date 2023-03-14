@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list android:oneshot="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="100" android:drawable="@drawable/youyun_loading_0001" />
+    <item android:duration="100" android:drawable="@drawable/youyun_loading_0002" />
+    <item android:duration="100" android:drawable="@drawable/youyun_loading_0003" />
+    <item android:duration="100" android:drawable="@drawable/youyun_loading_0004" />
+    <item android:duration="100" android:drawable="@drawable/youyun_loading_0005" />
+    <item android:duration="100" android:drawable="@drawable/youyun_loading_0006" />
+    <item android:duration="100" android:drawable="@drawable/youyun_loading_0007" />
+    <item android:duration="100" android:drawable="@drawable/youyun_loading_0008" />
+    <item android:duration="100" android:drawable="@drawable/youyun_loading_0009" />
+    <item android:duration="100" android:drawable="@drawable/youyun_loading_0010" />
+    <item android:duration="100" android:drawable="@drawable/youyun_loading_0011" />
+    <item android:duration="100" android:drawable="@drawable/youyun_loading_0012" />
+    <item android:duration="100" android:drawable="@drawable/youyun_loading_0013" />
+    <item android:duration="100" android:drawable="@drawable/youyun_loading_0014" />
+    <item android:duration="100" android:drawable="@drawable/youyun_loading_0015" />
+    <item android:duration="100" android:drawable="@drawable/youyun_loading_0016" />
+</animation-list>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/gl_bg_main" android:layout_width="292.0dip" android:layout_height="304.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_back" android:visibility="gone" android:layout_width="42.0dip" android:layout_height="42.0dip" android:src="@drawable/gl_back_main" android:scaleType="center" android:contentDescription="@string/gl_page_back_des" />
+    <ImageView android:id="@id/iv_close" android:layout_width="42.0dip" android:layout_height="42.0dip" android:src="@drawable/gl_close32" android:scaleType="center" android:layout_alignParentRight="true" android:contentDescription="@string/gl_dialog_close" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:text="@string/gl_account_login" android:layout_centerHorizontal="true" style="?gl_title_main" />
+    <ListView android:scrollbarSize="10.0dip" android:scrollbarThumbVertical="@drawable/gl_scroll_bar" android:id="@id/lv_quick_login_account" android:background="@drawable/gl_input" android:layout_width="fill_parent" android:layout_height="122.0dip" android:layout_marginLeft="24.0dip" android:layout_marginTop="70.0dip" android:layout_marginRight="24.0dip" android:listSelector="#00000000" android:divider="@null" android:dividerHeight="0.0dip" />
+    <TextView android:gravity="center_vertical" android:id="@id/tv_other_account_login" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginBottom="11.0dip" android:text="@string/gl_login_other_account" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="?gl_body_txt1" />
+    <TextView android:gravity="center" android:id="@id/tv_quick_login_enter_game" android:background="@drawable/gl_selector_bt_main" android:layout_width="242.0dip" android:layout_height="38.0dip" android:layout_marginBottom="11.0dip" android:text="@string/gl_enter_game" android:layout_above="@id/tv_other_account_login" android:layout_centerHorizontal="true" style="?gl_bt_main" />
+</RelativeLayout>

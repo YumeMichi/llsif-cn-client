@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/gl_bright_color" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="34.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_vertical" android:id="@id/gl_tai_first_alpha" android:layout_width="fill_parent" android:layout_height="34.0dip" android:text="@string/gl_hot_regions" style="?gl_important_txt1" />
+    <ImageView android:id="@id/gl_head_line" android:background="@drawable/gl_line_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/gl_bright_color" android:layout_width="fill_parent" android:layout_height="34.0dip">
+        <TextView android:id="@id/gl_item_countrycode_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gl_list_taiwan" style="?gl_input_txt" />
+        <TextView android:id="@id/gl_item_countrycode" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:text="+886" android:layout_alignParentRight="true" style="?gl_body_txt1" />
+    </RelativeLayout>
+    <ImageView android:id="@id/gl_content_line" android:background="@drawable/gl_line_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" />
+</LinearLayout>

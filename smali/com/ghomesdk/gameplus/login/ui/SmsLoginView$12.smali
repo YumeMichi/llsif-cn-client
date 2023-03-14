@@ -1,0 +1,168 @@
+.class Lcom/ghomesdk/gameplus/login/ui/SmsLoginView$12;
+.super Ljava/lang/Object;
+.source "SmsLoginView.java"
+
+# interfaces
+.implements Landroid/view/View$OnClickListener;
+
+
+# annotations
+.annotation system Ldalvik/annotation/EnclosingMethod;
+    value = Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;->show()V
+.end annotation
+
+.annotation system Ldalvik/annotation/InnerClass;
+    accessFlags = 0x0
+    name = null
+.end annotation
+
+
+# instance fields
+.field final synthetic this$0:Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;
+
+
+# direct methods
+.method constructor <init>(Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;)V
+    .locals 0
+
+    .line 212
+    iput-object p1, p0, Lcom/ghomesdk/gameplus/login/ui/SmsLoginView$12;->this$0:Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method public onClick(Landroid/view/View;)V
+    .locals 3
+
+    .line 215
+    iget-object p1, p0, Lcom/ghomesdk/gameplus/login/ui/SmsLoginView$12;->this$0:Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;
+
+    invoke-static {p1}, Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;->access$300(Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;)Landroid/widget/EditText;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Ljava/lang/String;->trim()Ljava/lang/String;
+
+    move-result-object p1
+
+    invoke-static {p1}, Landroid/text/TextUtils;->isEmpty(Ljava/lang/CharSequence;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_0
+
+    .line 216
+    iget-object p1, p0, Lcom/ghomesdk/gameplus/login/ui/SmsLoginView$12;->this$0:Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;
+
+    iget-object p1, p1, Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;->ctx:Landroid/app/Activity;
+
+    const-string v0, "\u8bf7\u8f93\u5165\u624b\u673a\u53f7\u7801"
+
+    invoke-static {p1, v0}, Lcom/ghomesdk/gameplus/utils/ToastUtil;->showMessage(Landroid/content/Context;Ljava/lang/String;)V
+
+    return-void
+
+    .line 219
+    :cond_0
+    iget-object p1, p0, Lcom/ghomesdk/gameplus/login/ui/SmsLoginView$12;->this$0:Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;
+
+    iget-object p1, p1, Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;->ctx:Landroid/app/Activity;
+
+    iget-object v0, p0, Lcom/ghomesdk/gameplus/login/ui/SmsLoginView$12;->this$0:Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;
+
+    invoke-static {v0}, Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;->access$400(Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;)Landroid/widget/TextView;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Landroid/widget/TextView;->getText()Ljava/lang/CharSequence;
+
+    move-result-object v0
+
+    invoke-interface {v0}, Ljava/lang/CharSequence;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    iget-object v1, p0, Lcom/ghomesdk/gameplus/login/ui/SmsLoginView$12;->this$0:Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;
+
+    invoke-static {v1}, Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;->access$300(Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;)Landroid/widget/EditText;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Landroid/widget/EditText;->getText()Landroid/text/Editable;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/Object;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/String;->trim()Ljava/lang/String;
+
+    move-result-object v1
+
+    const-string v2, "#"
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {p1, v0, v1}, Lcom/ghomesdk/gameplus/utils/PhoneStrUtil;->isPhoneFormatWrong(Landroid/content/Context;Ljava/lang/String;[Ljava/lang/String;)Z
+
+    move-result p1
+
+    if-eqz p1, :cond_1
+
+    return-void
+
+    .line 222
+    :cond_1
+    iget-object p1, p0, Lcom/ghomesdk/gameplus/login/ui/SmsLoginView$12;->this$0:Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;
+
+    invoke-static {p1}, Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;->access$900(Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;)Lcom/ghomesdk/gameplus/dialog/VoiceCodeDialog;
+
+    move-result-object p1
+
+    iget-object v0, p0, Lcom/ghomesdk/gameplus/login/ui/SmsLoginView$12;->this$0:Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;
+
+    invoke-static {v0}, Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;->access$500(Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Lcom/ghomesdk/gameplus/dialog/VoiceCodeDialog;->setPhoneNumber(Ljava/lang/String;)V
+
+    .line 223
+    invoke-static {}, Lcom/ghomesdk/gameplus/login/LoginController;->getInstance()Lcom/ghomesdk/gameplus/login/LoginController;
+
+    move-result-object p1
+
+    iget-object v0, p0, Lcom/ghomesdk/gameplus/login/ui/SmsLoginView$12;->this$0:Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;
+
+    invoke-static {v0}, Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;->access$500(Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {p1, v0}, Lcom/ghomesdk/gameplus/login/LoginController;->setInputPhoneStr(Ljava/lang/String;)V
+
+    .line 224
+    iget-object p1, p0, Lcom/ghomesdk/gameplus/login/ui/SmsLoginView$12;->this$0:Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;
+
+    invoke-static {p1}, Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;->access$900(Lcom/ghomesdk/gameplus/login/ui/SmsLoginView;)Lcom/ghomesdk/gameplus/dialog/VoiceCodeDialog;
+
+    move-result-object p1
+
+    invoke-virtual {p1}, Lcom/ghomesdk/gameplus/dialog/VoiceCodeDialog;->show()V
+
+    return-void
+.end method

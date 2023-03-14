@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="38.0dip" android:minHeight="38.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tv_quick_login_phone_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="+86" android:layout_centerVertical="true" style="?gl_body_txt1" />
+    <ImageView android:id="@id/iv_quick_login_select_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gl_close24_gray" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/gl_delete" />
+    <ImageView android:background="@drawable/gl_line_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

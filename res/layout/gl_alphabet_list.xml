@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:scrollbarSize="10.0dip" android:scrollbarThumbVertical="@drawable/gl_scroll_bar" android:id="@id/gl_tal_list_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:dividerHeight="0.0dip" />
+    <com.ghomesdk.gameplus.customized.AlphabetView android:id="@id/gl_tal_alphabet_view" android:layout_width="30.0dip" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+</RelativeLayout>

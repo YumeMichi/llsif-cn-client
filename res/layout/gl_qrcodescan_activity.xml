@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/activity_scan" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:id="@id/btn_close" android:background="@drawable/gl_back_pop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27.0dip" android:layout_centerVertical="true" android:layout_marginStart="20.0dip" style="@style/txt16_grey28" />
+        <TextView android:textSize="18.0sp" android:textColor="@android:color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27.0dip" android:text="@string/zx_layout_scan_title" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <SurfaceView android:layout_gravity="center" android:id="@id/scanner_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.google.zxing.view.ViewfinderView android:id="@id/viewfinder_content" android:layout_width="wrap_content" android:layout_height="wrap_content" app:corner_color="#ffd12228" app:frame_color="#90ffffff" app:label_text="@string/zx_layout_focus_qrcode" app:label_text_color="#ffffffff" app:label_text_margin_top="8.0dip" app:label_text_size="16.0sp" app:laser_color="#ff6f87f3" app:mask_color="#60000000" app:result_color="#b0000000" app:result_point_color="#c0ffff00" />
+    </FrameLayout>
+</LinearLayout>

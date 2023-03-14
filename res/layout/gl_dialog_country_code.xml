@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/gl_bg_pop" android:layout_width="292.0dip" android:layout_height="305.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/iv_close" android:layout_width="35.0dip" android:layout_height="35.0dip" android:src="@drawable/gl_close24" android:scaleType="center" android:layout_alignParentRight="true" android:contentDescription="@string/gl_dialog_close" />
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/gl_phone_country_title" android:layout_centerHorizontal="true" style="?gl_input_txt" />
+    <com.ghomesdk.gameplus.customized.AlphabetListView android:id="@id/alphabet_listView_country_code" android:background="@drawable/gl_input" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="24.0dip" android:layout_marginTop="48.0dip" android:layout_marginRight="24.0dip" android:layout_marginBottom="20.0dip" />
+</RelativeLayout>

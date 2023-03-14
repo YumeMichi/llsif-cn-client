@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/gl_bg_pop" android:layout_width="292.0dip" android:layout_height="wrap_content" android:minHeight="150.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <TextView android:layout_gravity="center" android:id="@id/tv_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24.0dip" android:layout_marginRight="24.0dip" android:lineSpacingExtra="7.0dip" style="@style/gl_body_txt1_light" />
+        <LinearLayout android:orientation="horizontal" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:gravity="center" android:id="@id/bt_get" android:background="@drawable/gl_selector_bt_main" android:layout_width="0.0dip" android:layout_height="38.0dip" android:layout_marginLeft="24.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="24.0dip" android:text="@string/gl_go_setting" android:layout_weight="1.0" style="@style/gl_bt_main_light" />
+            <TextView android:gravity="center" android:id="@id/bt_cancel" android:background="@drawable/gl_selector_bt_main" android:layout_width="0.0dip" android:layout_height="38.0dip" android:layout_marginLeft="24.0dip" android:layout_marginTop="18.0dip" android:layout_marginRight="24.0dip" android:text="@string/dlg_activeclose_ok" android:layout_weight="1.0" style="@style/gl_bt_main_light" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

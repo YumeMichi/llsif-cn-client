@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:background="@color/grcode_transparent_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/gl_bg_pop" android:paddingBottom="20.0dip" android:layout_width="292.0dip" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="right" android:id="@id/iv_close" android:layout_width="34.0dip" android:layout_height="34.0dip" android:src="@drawable/gl_close24" android:scaleType="center" android:contentDescription="@string/gl_dialog_close" />
+        <TextView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gl_input_pic_ver_code_title" style="?gl_body_txt1" />
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_graphic_ver_code" android:layout_width="123.0dip" android:layout_height="40.0dip" android:layout_marginTop="14.0dip" android:scaleType="fitXY" android:contentDescription="@string/gl_dlg_pic_des" />
+        <EditText android:gravity="center" android:id="@id/et_input_graphic_ver_code" android:background="@drawable/gl_input" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="24.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="24.0dip" android:hint="@string/gl_input_pic_ver_code" android:maxLines="1" android:maxLength="32" android:inputType="text" android:imeOptions="flagNoExtractUi" android:textCursorDrawable="@drawable/gl_cursor_color" />
+        <TextView android:gravity="center" android:id="@id/tv_graphic_ver_code_confirm" android:background="@drawable/gl_selector_bt_main" android:layout_width="fill_parent" android:layout_height="38.0dip" android:layout_marginLeft="24.0dip" android:layout_marginTop="14.0dip" android:layout_marginRight="24.0dip" android:text="@string/gl_confirm_str" style="?gl_bt_main" />
+    </LinearLayout>
+</LinearLayout>

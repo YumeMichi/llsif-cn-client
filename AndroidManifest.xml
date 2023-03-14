@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="23" android:compileSdkVersionCodename="6.0-2438415" android:installLocation="auto" package="klb.android.lovelivecn" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <permission android:name="klb.android.lovelivecn.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="klb.android.lovelivecn.permission.C2D_MESSAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-feature android:name="android.hardware.location" android:required="false"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_SMS"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_SETTINGS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL"/>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <application android:allowBackup="false" android:icon="@drawable/app_icon" android:label="@string/app_name" android:name="klb.android.GameEngine.GameEngineApplication" android:usesCleartextTraffic="true">
+        <activity android:configChanges="keyboardHidden|layoutDirection|locale|orientation|screenSize|uiMode" android:label="@string/app_name" android:launchMode="standard" android:maxAspectRatio="2.2" android:name="klb.android.GameEngine.GameEngineActivity" android:resizeableActivity="false" android:screenOrientation="userLandscape" android:theme="@style/AppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:host="auth" android:scheme="lovelive-jp-klabid"/>
+                <data android:host="link" android:scheme="lovelive-jp-klab"/>
+                <data android:host="no" android:scheme="lovelive_cn"/>
+            </intent-filter>
+        </activity>
+        <receiver android:directBootAware="true" android:name="klb.android.lovelivecn.BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+                <action android:name="android.intent.action.LOCKED_BOOT_COMPLETED"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="klb.android.lovelivecn.AlarmBroadcastReceiver" android:process=":remote"/>
+        <service android:name="klb.android.lovelivecn.LocalNotificationIntentService"/>
+        <meta-data android:name="android.max_aspect" android:value="2.2"/>
+        <provider android:authorities="klb.android.lovelivecn.update.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/gbase_file_paths"/>
+        </provider>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="false" android:name="com.sina.weibo.sdk.web.WeiboSdkWebActivity" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:name="com.ghomesdk.gameplus.pay.PayActivity" android:screenOrientation="behind" android:theme="@android:style/Theme.NoTitleBar.Fullscreen" android:windowSoftInputMode="adjustResize"/>
+        <activity android:name="com.ghomesdk.gameplus.qrcode.QRCodeScanActivity" android:screenOrientation="landscape" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:name="com.gsk.TouchMatrixActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation" android:exported="false" android:name="com.alipay.sdk.app.H5PayActivity" android:screenOrientation="behind"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="false" android:name="com.alipay.sdk.app.H5AuthActivity" android:screenOrientation="behind"/>
+        <activity android:configChanges="keyboardHidden|navigation|orientation|screenSize" android:exported="true" android:launchMode="singleInstance" android:name="com.alipay.sdk.app.PayResultActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:exported="true" android:launchMode="singleTask" android:name="com.alipay.sdk.app.AlipayResultActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <meta-data android:name="ENV" android:value="release"/>
+        <meta-data android:name="APPLICATION_CHANNEL" android:value="GG103"/>
+        <meta-data android:name="APPLICATION_KEY" android:value="791000035"/>
+        <meta-data android:name="VERCTRL_URL_1" android:value="http://123.59.98.53/apk_update/ver_ctrl.json"/>
+        <meta-data android:name="VERCTRL_URL_2" android:value="http://123.59.98.53/apk_update/ver_ctrl.json"/>
+        <meta-data android:name="VERCTRL_URL_3" android:value="http://123.59.98.53/apk_update/ver_ctrl.json"/>
+        <meta-data android:name="VERCTRL_URL_4" android:value="http://123.59.98.53/apk_update/ver_ctrl.json"/>
+        <meta-data android:name="APPLICATION_SUPER_CHANNEL" android:value="A1"/>
+    </application>
+</manifest>

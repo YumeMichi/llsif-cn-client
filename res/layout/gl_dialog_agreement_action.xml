@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@drawable/gl_bg_pop" android:layout_width="292.0dip" android:layout_height="@dimen/gl_new_dialog_portrait_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="26.0dip" android:layout_marginBottom="20.0dip">
+        <WebView android:scrollbarSize="10.0dip" android:scrollbarThumbVertical="@drawable/gl_scroll_bar" android:id="@id/webview_agreement" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/ll_action" android:layout_alignParentTop="true" android:isScrollContainer="false" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_action" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_alignParentBottom="true">
+            <TextView android:gravity="center" android:id="@id/bt_agree" android:background="@drawable/gl_selector_bt_main" android:layout_width="0.0dip" android:layout_height="38.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="@string/gl_button_agree" android:layout_weight="1.0" style="@style/gl_bt_main_light" />
+            <TextView android:gravity="center" android:id="@id/bt_disagree" android:background="@drawable/gl_bt_forbidden" android:layout_width="0.0dip" android:layout_height="38.0dip" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="@string/gl_button_disagree" android:layout_weight="1.0" style="@style/gl_bt_main_light" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>
