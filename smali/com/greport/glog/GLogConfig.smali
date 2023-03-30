@@ -8,7 +8,7 @@
 
 .field public static final GPOP_LOG_FILE_NAME:Ljava/lang/String; = "GPOPGUIDLog.txt"
 
-.field public static GPOP_UPLOAD_URL:Ljava/lang/String; = "https://reportsk-nh.sdo.com/report/ge/app"
+.field public static GPOP_UPLOAD_URL:Ljava/lang/String; = "http://192.168.1.12:8080/report/ge/app"
 
 .field public static IS_CACHE:Z = true
 
@@ -22,11 +22,11 @@
 
 .field public static final TAG:Ljava/lang/String; = "GLog"
 
-.field static UPLOAD_ERROR_URL_PREFIX:Ljava/lang/String; = "https://reportsk.web.sdo.com/report/ge/app"
+.field static UPLOAD_ERROR_URL_PREFIX:Ljava/lang/String; = "http://192.168.1.12:8080/report/ge/app"
 
-.field public static UPLOAD_URL:Ljava/lang/String; = "https://reportsk.web.sdo.com/report/ge/app"
+.field public static UPLOAD_URL:Ljava/lang/String; = "http://192.168.1.12:8080/report/ge/app"
 
-.field static UPLOAD_URL_ANR:Ljava/lang/String; = "https://reportsk.web.sdo.com/report/ge/app"
+.field static UPLOAD_URL_ANR:Ljava/lang/String; = "http://192.168.1.12:8080/report/ge/app"
 
 .field public static final rsdk_version:Ljava/lang/String; = "1.0.1"
 

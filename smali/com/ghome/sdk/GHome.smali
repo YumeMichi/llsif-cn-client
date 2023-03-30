@@ -2332,7 +2332,7 @@
     sput-boolean v3, Lcom/greport/glog/GLogConfig;->IS_GPOP_TEST:Z
 
     :goto_1
-    const-string v6, "https://reportsk.web.sdo.com/report/ge/app"
+    const-string v6, "http://192.168.1.12:8080/report/ge/app"
 
     .line 149
     invoke-static {p1, v6, v5}, Lcom/greport/glog/GLog;->init(Landroid/content/Context;Ljava/lang/String;Ljava/util/Map;)V
