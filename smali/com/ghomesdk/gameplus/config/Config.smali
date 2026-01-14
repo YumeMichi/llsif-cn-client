@@ -10,7 +10,7 @@
 
 .field public static ADVERT_DOMAIN:Ljava/lang/String; = null
 
-.field public static final ADVERT_DOMAIN_TEST:Ljava/lang/String; = "http://192.168.1.12:8080"
+.field public static final ADVERT_DOMAIN_TEST:Ljava/lang/String; = "http://192.168.3.99:8093"
 
 .field public static final AGREEMENT_SCENE_CONTENT:Ljava/lang/String; = "agreement_content"
 
@@ -54,15 +54,15 @@
 
 .field public static DISPLAY_THRIDACCOUNT:Z = false
 
-.field public static DOMAIN:Ljava/lang/String; = "http://192.168.1.12:8080"
+.field public static DOMAIN:Ljava/lang/String; = "http://192.168.3.99:8093"
 
-.field public static DOMAIN_AGREEMENT:Ljava/lang/String; = "http://192.168.1.12:8080"
+.field public static DOMAIN_AGREEMENT:Ljava/lang/String; = "http://192.168.3.99:8093"
 
-.field public static final DOMAIN_AGREEMENT_TEST:Ljava/lang/String; = "http://192.168.1.12:8080"
+.field public static final DOMAIN_AGREEMENT_TEST:Ljava/lang/String; = "http://192.168.3.99:8093"
 
 .field public static final DOMAIN_QA:Ljava/lang/String; = "http://qa.mgame.sdo.com"
 
-.field public static final DOMAIN_RELEASE:Ljava/lang/String; = "http://192.168.1.12:8080"
+.field public static final DOMAIN_RELEASE:Ljava/lang/String; = "http://192.168.3.99:8093"
 
 .field public static final DOMAIN_TEST:Ljava/lang/String; = "http://mgame.sdo.com"
 
@@ -82,7 +82,7 @@
 
 .field public static GHUME_VERSION:Ljava/lang/String; = null
 
-.field public static final GLOG_LOG_URL:Ljava/lang/String; = "https://192.168.1.12:8080/report/ge/app"
+.field public static final GLOG_LOG_URL:Ljava/lang/String; = "https://192.168.3.99:8093/report/ge/app"
 
 .field public static GPOP_GUID:Ljava/lang/String; = null
 
@@ -356,7 +356,7 @@
     .line 183
     sput-object v0, Lcom/ghomesdk/gameplus/config/Config;->GHUME_VERSION:Ljava/lang/String;
 
-    const-string v2, "http://192.168.1.12:8080"
+    const-string v2, "http://192.168.3.99:8093"
 
     .line 186
     sput-object v2, Lcom/ghomesdk/gameplus/config/Config;->ADVERT_DOMAIN:Ljava/lang/String;

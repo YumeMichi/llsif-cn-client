@@ -534,7 +534,7 @@
 
     :cond_0
     :goto_0
-    const-string v0, "http://192.168.1.12:8080/report/ge/app"
+    const-string v0, "http://192.168.3.99:8093/report/ge/app"
 
     .line 111
     invoke-static {p0, v0, v4}, Lcom/greport/glog/GLog;->init(Landroid/content/Context;Ljava/lang/String;Ljava/util/Map;)V
@@ -1640,7 +1640,7 @@
 
     if-eqz p0, :cond_0
 
-    const-string p0, "http://192.168.1.12:8080"
+    const-string p0, "http://192.168.3.99:8093"
 
     .line 570
     sput-object p0, Lcom/ghomesdk/gameplus/config/Config;->DOMAIN:Ljava/lang/String;
@@ -1653,7 +1653,7 @@
     .line 573
     sput-object p0, Lcom/ghomesdk/gameplus/config/Config;->DOMAIN:Ljava/lang/String;
 
-    const-string p0, "http://192.168.1.12:8080"
+    const-string p0, "http://192.168.3.99:8093"
 
     .line 574
     sput-object p0, Lcom/ghomesdk/gameplus/config/Config;->ADVERT_DOMAIN:Ljava/lang/String;

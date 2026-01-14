@@ -1,40 +1,23 @@
-!!brut.androlib.meta.MetaInfo
-apkFileName: apk_791000035_GG103_1665556994311.apk
-compressionType: false
-doNotCompress:
-- resources.arsc
-- png
-- jpg
-- gif
-- ogg
-- assets/version
-- assets/zlsioh.dat
-- assets/secImage.dat
-isFrameworkApk: false
-packageInfo:
-  forcedPackageId: '127'
-  renameManifestPackage: null
-sdkInfo:
-  minSdkVersion: '17'
-  targetSdkVersion: '26'
-sharedLibrary: false
-sparseResources: false
-unknownFiles:
-  android-support-multidex.version.txt: '8'
-  okhttp3/internal/publicsuffix/publicsuffixes.gz: '0'
-  org/apache/http/entity/mime/version.properties: '8'
-  org/apache/log4j/lf5/config/defaultconfig.properties: '8'
-  org/apache/log4j/lf5/viewer/images/channelexplorer_new.gif: '0'
-  org/apache/log4j/lf5/viewer/images/channelexplorer_satellite.gif: '0'
-  org/apache/log4j/lf5/viewer/images/lf5_small_icon.gif: '0'
-  org/apache/log4j/xml/log4j.dtd: '8'
-  org/bouncycastle/x509/CertPathReviewerMessages.properties: '8'
-  org/bouncycastle/x509/CertPathReviewerMessages_de.properties: '8'
+version: 2.12.1
+apkFileName: LoveLive_9.7.1.apk
 usesFramework:
   ids:
   - 1
-  tag: null
-version: 2.7.0
+sdkInfo:
+  minSdkVersion: 17
+  targetSdkVersion: 26
+packageInfo:
+  forcedPackageId: 127
 versionInfo:
-  versionCode: '2112171390'
+  versionCode: 2112171390
   versionName: 9.7.1
+doNotCompress:
+- arsc
+- gif
+- jpg
+- ogg
+- png
+- assets/secImage.dat
+- assets/version
+- assets/zlsioh.dat
+- okhttp3/internal/publicsuffix/publicsuffixes.gz

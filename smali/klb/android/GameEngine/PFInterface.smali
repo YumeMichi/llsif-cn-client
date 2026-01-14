@@ -2499,7 +2499,7 @@
     .catch Ljava/security/NoSuchAlgorithmException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 1195
-    const-string p0, "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAz2Z/TyjpY/Pwx7RiPJ+dT+1fzBmNr9ncRH99FWUx7wlrH+EuRcAh3j3BTTkL9fi1QVYNHi+Y58lAI7hkupQFACiPxcrF4YzSRz5zYiJP6XGQ6vrdZ2Mfhga/flCLgA3W1gk6WGlU/xh3Li90lnB3L+gsIkpUQpAU7voGUfk4l7DjhGVMWqGR6MumoJdPhtxtRKpJxRAZmeY+mERn6Z3wdPIKWTaDFNFa85/To6bmPHgyWc65q7HYo6LreOG4OCUsGk8QfKf9mx6o12zN+wqFvfOuzgToVFiA+LrzQn27PvHKertCse4vkZ8GD+acWh1rDWdPqRdNrwbpWGZirE1wtQIDAQAB"
+    const-string p0, "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDWvpCOQGvWEgauCr3lkQQOdeoJhr7zWG+F6OwahRx8Jn+SSeAG5Rurz+upF+gVURk6YNEbwMquG18WhZDJ+2rJwKtCPwQtB4YJAkW11eD56WNvccM/xnPOH71hckc0izAJh8wVheUEc/3RCeIV9mp8RFVKor1XW4lTwTLEcyKyZQIDAQAB"
 
     const/4 v3, 0x0
 
@@ -2514,14 +2514,14 @@
     invoke-direct {v2, p0}, Ljava/security/spec/X509EncodedKeySpec;-><init>([B)V
 
     .line 1209
-    :try_start_2
+    :try_start_1
     invoke-virtual {v1, v2}, Ljava/security/KeyFactory;->generatePublic(Ljava/security/spec/KeySpec;)Ljava/security/PublicKey;
 
     move-result-object p0
 
     check-cast p0, Ljava/security/interfaces/RSAPublicKey;
-    :try_end_2
-    .catch Ljava/security/spec/InvalidKeySpecException; {:try_start_2 .. :try_end_2} :catch_0
+    :try_end_1
+    .catch Ljava/security/spec/InvalidKeySpecException; {:try_start_1 .. :try_end_1} :catch_0
 
     return-object p0
 

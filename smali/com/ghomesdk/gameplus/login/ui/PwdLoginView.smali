@@ -430,23 +430,6 @@
 
     iput-object v0, p0, Lcom/ghomesdk/gameplus/login/ui/PwdLoginView;->agreementCb:Landroid/widget/CheckBox;
 
-    .line 111
-    iget-object v0, p0, Lcom/ghomesdk/gameplus/login/ui/PwdLoginView;->loginDialog:Lcom/ghomesdk/gameplus/login/LoginDialog;
-
-    iget-object v1, p0, Lcom/ghomesdk/gameplus/login/ui/PwdLoginView;->ctx:Landroid/app/Activity;
-
-    const-string v2, "iv_back"
-
-    invoke-static {v1, v2}, Lcom/ghomesdk/gameplus/utils/ResourceFinder;->getId(Landroid/content/Context;Ljava/lang/String;)I
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Lcom/ghomesdk/gameplus/login/LoginDialog;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/ImageView;
-
     .line 112
     new-instance v1, Lcom/ghomesdk/gameplus/login/ui/PwdLoginView$5;
 
@@ -500,46 +483,12 @@
 
     invoke-virtual {v0, v1}, Landroid/view/View;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
-    .line 147
-    iget-object v0, p0, Lcom/ghomesdk/gameplus/login/ui/PwdLoginView;->loginDialog:Lcom/ghomesdk/gameplus/login/LoginDialog;
-
-    iget-object v1, p0, Lcom/ghomesdk/gameplus/login/ui/PwdLoginView;->ctx:Landroid/app/Activity;
-
-    const-string v2, "tv_forget_password"
-
-    invoke-static {v1, v2}, Lcom/ghomesdk/gameplus/utils/ResourceFinder;->getId(Landroid/content/Context;Ljava/lang/String;)I
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Lcom/ghomesdk/gameplus/login/LoginDialog;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/TextView;
-
     .line 148
     new-instance v1, Lcom/ghomesdk/gameplus/login/ui/PwdLoginView$8;
 
     invoke-direct {v1, p0}, Lcom/ghomesdk/gameplus/login/ui/PwdLoginView$8;-><init>(Lcom/ghomesdk/gameplus/login/ui/PwdLoginView;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
-
-    .line 155
-    iget-object v0, p0, Lcom/ghomesdk/gameplus/login/ui/PwdLoginView;->loginDialog:Lcom/ghomesdk/gameplus/login/LoginDialog;
-
-    iget-object v1, p0, Lcom/ghomesdk/gameplus/login/ui/PwdLoginView;->ctx:Landroid/app/Activity;
-
-    const-string v2, "tv_switch_sms_login"
-
-    invoke-static {v1, v2}, Lcom/ghomesdk/gameplus/utils/ResourceFinder;->getId(Landroid/content/Context;Ljava/lang/String;)I
-
-    move-result v1
-
-    invoke-virtual {v0, v1}, Lcom/ghomesdk/gameplus/login/LoginDialog;->findViewById(I)Landroid/view/View;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/widget/TextView;
 
     .line 156
     new-instance v1, Lcom/ghomesdk/gameplus/login/ui/PwdLoginView$9;
