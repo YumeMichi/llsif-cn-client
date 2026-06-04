@@ -431,11 +431,17 @@
     iput-object v0, p0, Lcom/ghomesdk/gameplus/login/ui/PwdLoginView;->agreementCb:Landroid/widget/CheckBox;
 
     .line 112
-    new-instance v1, Lcom/ghomesdk/gameplus/login/ui/PwdLoginView$5;
+    iget-object v1, p0, Lcom/ghomesdk/gameplus/login/ui/PwdLoginView;->ctx:Landroid/app/Activity;
 
-    invoke-direct {v1, p0}, Lcom/ghomesdk/gameplus/login/ui/PwdLoginView$5;-><init>(Lcom/ghomesdk/gameplus/login/ui/PwdLoginView;)V
+    const-string v2, "agreement_checkbox_selected"
 
-    invoke-virtual {v0, v1}, Landroid/widget/ImageView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
+    const/4 v3, 0x0
+
+    invoke-static {v1, v2, v3}, Lcom/ghomesdk/gameplus/utils/SharedPreferencesUtil;->getSharedPreferencesValue(Landroid/content/Context;Ljava/lang/String;Z)Z
+
+    move-result v1
+
+    invoke-virtual {v0, v1}, Landroid/widget/CheckBox;->setChecked(Z)V
 
     .line 121
     iget-object v0, p0, Lcom/ghomesdk/gameplus/login/ui/PwdLoginView;->loginDialog:Lcom/ghomesdk/gameplus/login/LoginDialog;
